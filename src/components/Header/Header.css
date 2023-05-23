@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333655;
+  padding: 0 50px 0 50px;
+  position: sticky;
+  top: 0;
+}
+
+.header h1 {
+  color: #ffffff;
+}
+.btn-create {
+  width: 227px;
+  height: 45px;
+
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  background-color: #555a88;
+  color: #ffffff;
+  cursor: pointer;
+}
+.btn-create:active {
+  transform: translate(0em, 0.2em);
+}
+
+.btn-create::first-letter {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}

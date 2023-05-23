@@ -1,0 +1,60 @@
+li {
+  list-style: none;
+}
+h2 {
+  margin: 10px 0 10px 0;
+  font-size: 20px;
+  padding: 8px;
+}
+h3 {
+  margin: 0;
+  color: #d3d3d3;
+  font-size: 12px;
+}
+hr {
+  margin: 15px 0 10px 0;
+}
+p {
+  margin: 0;
+}
+
+.container_user_list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.User-card {
+  width: 381px;
+  height: 274px;
+  border: solid #e5e5e5 4px;
+  padding: 0 20px 0 20px;
+  border-radius: 10px;
+}
+
+.btn-delete {
+  cursor: pointer;
+  background-color: #d93f3f;
+  width: 40px;
+  height: 40px;
+  font-size: 23px;
+  border-radius: 4px;
+  margin-top: auto;
+  border: none;
+}
+
+.btn-edit {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  font-size: 23px;
+  border-radius: 4px;
+  margin-top: 12px;
+  border: none;
+}
+
+.container-options {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
