@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-  baseURL: "http://users-crud.academlo.tech/",
+  baseURL: "https://users-crud.academlo.tech/",
 });
