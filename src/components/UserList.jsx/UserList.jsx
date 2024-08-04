@@ -1,7 +1,7 @@
 import { PascalCase } from "../../utils/PascalCase";
 import "./UserList.css";
 
-const UserList = ({ users, onEditUser, deleteUser }) => {
+const UserList = ({ users, onEditUser, onClose }) => {
   if (!users.length) return <p>Without users</p>;
   return (
     <ul className="container_user_list">
@@ -13,7 +13,7 @@ const UserList = ({ users, onEditUser, deleteUser }) => {
             </h2>
             <hr />
             <h3>EMAIL</h3>
-            <p>{user.email}</p>
+            <p className="email">{user.email}</p>
             <hr />
             <h3>BIRTHDAY</h3>
             <p>{user.birthday}</p>
@@ -22,7 +22,7 @@ const UserList = ({ users, onEditUser, deleteUser }) => {
             <div className="container-options">
               <button
                 title="Delete User"
-                onClick={() => deleteUser(user)}
+                onClick={() => onClose(user)}
                 className="btn-delete"
               >
                 <ion-icon name="trash-outline"></ion-icon>

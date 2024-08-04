@@ -1,10 +1,15 @@
 li {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 h2 {
-  margin: 10px 0 10px 0;
+  margin: 0;
   font-size: 20px;
   padding: 8px;
+  text-wrap: nowrap;
+  overflow-x: auto;
 }
 h3 {
   margin: 0;
@@ -14,18 +19,25 @@ h3 {
 hr {
   margin: 15px 0 10px 0;
 }
+p.email {
+  text-wrap: nowrap;
+  overflow-x: auto;
+}
 p {
   margin: 0;
 }
 
 .container_user_list {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  padding: 20px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 20px;
 }
 
 .User-card {
-  width: 381px;
+  min-width: 280px;
+  max-width: 320px;
   height: 274px;
   border: solid #e5e5e5 4px;
   padding: 0 20px 0 20px;
@@ -35,9 +47,9 @@ p {
 .btn-delete {
   cursor: pointer;
   background-color: #d93f3f;
-  width: 40px;
-  height: 40px;
-  font-size: 23px;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
   border-radius: 4px;
   margin-top: auto;
   border: none;
@@ -45,9 +57,9 @@ p {
 
 .btn-edit {
   cursor: pointer;
-  width: 40px;
-  height: 40px;
-  font-size: 23px;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
   border-radius: 4px;
   margin-top: 12px;
   border: none;

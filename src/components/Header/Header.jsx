@@ -4,7 +4,7 @@ const Header = ({ onCreate }) => {
     <header className="header">
       <h1>Users</h1>
       <button onClick={() => onCreate()} className="btn-create">
-        + Create a new form
+        + Add User
       </button>
     </header>
   );
